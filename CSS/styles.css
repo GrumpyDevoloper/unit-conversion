@@ -135,3 +135,28 @@ button:hover {
       8px 16px 16px hsl(220deg 60% 50% / 0.5);
   }
 }
+
+@media (max-width: 280px), (max-width: 360px) {
+  .data h2 {
+    margin: 0.5rem;
+  }
+
+  button {
+    position: relative;
+    width: 5rem;
+    border-radius: 1rem;
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    top: 20%;
+  }
+
+  .unit-box {
+    position: relative;
+    font-size: 6rem;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
