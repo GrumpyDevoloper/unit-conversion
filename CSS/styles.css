@@ -1,0 +1,129 @@
+:root {
+  --lightBG: #fbf7ee;
+  --darkBG: #1f2937;
+  --Gradient: linear-gradient(246.26deg, #ed4683 0%, #f48e14 100%);
+  --LightBG: #fff;
+  --DarkBG: #000;
+  --LightTXT: #000;
+  --DarkTXT: #fff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400, 600, 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  height: calc(100vh - 1px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.25rem;
+}
+
+h1 {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+button {
+  position: relative;
+  width: 5rem;
+  border-radius: 1rem;
+  left: 0;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  top: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.header {
+  background: var(--Gradient);
+  width: 100%;
+  height: 16.25rem;
+  border-radius: 0.5rem;
+}
+
+.container {
+  max-width: 34.375rem;
+  max-height: 34.375rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 2px hsl(220deg 60% 50% / 0.2),
+    2px 4px 4px hsl(220deg 60% 50% / 0.2), 4px 8px 8px hsl(220deg 60% 50% / 0.2),
+    8px 16px 16px hsl(220deg 60% 50% / 0.2),
+    16px 32px 32px hsl(220deg 60% 50% / 0.2);
+}
+
+.container p span {
+  vertical-align: middle;
+}
+
+.unit-box {
+  position: relative;
+  font-size: 6rem;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.data {
+  margin: 1.5rem;
+}
+
+.data h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: var(--DarkBG);
+    color: var(--DarkTXT);
+  }
+
+  .container {
+    background: var(--darkBG);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background: var(--LightBG);
+    color: var(--LightTXT);
+  }
+
+  .container {
+    background: var(--lightBG);
+  }
+}
