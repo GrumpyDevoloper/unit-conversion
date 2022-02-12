@@ -1,7 +1,7 @@
 :root {
   --lightBG: #fbf7ee;
   --darkBG: #1f2937;
-  --Gradient: linear-gradient(246.26deg, #ed4683 0%, #f48e14 100%);
+  --Gradient: linear-gradient(246.26deg, #172346 0%, #3d6be6 100%);
   --LightBG: #fff;
   --DarkBG: #000;
   --LightTXT: #000;
@@ -114,6 +114,10 @@ button:hover {
 
   .container {
     background: var(--darkBG);
+    box-shadow: 1px 2px 2px hsl(220deg 60% 50% / 0.2),
+      2px 4px 4px hsl(220deg 60% 50% / 0.2),
+      4px 8px 8px hsl(220deg 60% 50% / 0.2),
+      8px 16px 16px hsl(220deg 60% 50% / 0.2);
   }
 }
 
@@ -125,5 +129,9 @@ button:hover {
 
   .container {
     background: var(--lightBG);
+    box-shadow: 1px 2px 2px hsl(220deg 60% 50% / 0.5),
+      2px 4px 4px hsl(220deg 60% 50% / 0.5),
+      4px 8px 8px hsl(220deg 60% 50% / 0.5),
+      8px 16px 16px hsl(220deg 60% 50% / 0.5);
   }
 }
