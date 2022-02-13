@@ -9,7 +9,18 @@
     <div class="container">
       <div class="header">
         <h1>Metric/Imperial unit conversion</h1>
-        <p class="unit-box"><span id="unit">0</span></p>
+        <p class="unit-box">
+          <span id="unit"></span>
+          <input
+            class="input"
+            type="number"
+            placeholder=""
+            id="number"
+            maxlength="3"
+            oninput="javascript: if (this.value.length > this.maxLength)
+             this.value = this.value.slice(0, this.maxLength);"
+          />
+        </p>
         <button onclick="getNumberValue()">Submit</button>
       </div>
       <div class="data">
@@ -33,5 +44,6 @@
         </p>
       </div>
     </div>
+    <script src="./Javascript/conversion.js"></script>
   </body>
 </html>

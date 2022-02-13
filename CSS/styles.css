@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 0.5rem;
 }
 
 h1 {
@@ -41,7 +42,6 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  margin: auto;
   font-size: 1.2rem;
   font-weight: 800;
 }
@@ -54,10 +54,11 @@ p {
 button {
   position: relative;
   width: 5rem;
+  height: 2rem;
   border-radius: 1rem;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 50%;
 }
 
 button:hover {
@@ -87,19 +88,46 @@ button:hover {
 
 .unit-box {
   position: relative;
-  font-size: 6rem;
   top: 35%;
   left: 0;
 }
 
 .data {
-  margin: 1.5rem;
+  margin: 0.8rem 0.8rem;
 }
 
 .data h2 {
   font-size: 1rem;
   font-weight: 600;
   margin: 1.5rem;
+}
+
+.input {
+  color: var(--DarkTXT);
+  position: relative;
+  top: 35%;
+  left: 0;
+  background: inherit;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.input:focus {
+  background: inherit;
+  outline: none;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#unit {
+  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -114,6 +142,10 @@ button:hover {
       2px 4px 4px hsl(220deg 60% 50% / 0.2),
       4px 8px 8px hsl(220deg 60% 50% / 0.2),
       8px 16px 16px hsl(220deg 60% 50% / 0.2);
+  }
+
+  .input {
+    color: var(--DarkTXT);
   }
 }
 
@@ -130,6 +162,10 @@ button:hover {
       4px 8px 8px hsl(220deg 60% 50% / 0.5),
       8px 16px 16px hsl(220deg 60% 50% / 0.5);
   }
+
+  .input {
+    color: var(--LightTXT);
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
@@ -143,10 +179,14 @@ button:hover {
   }
 
   button {
-    top: 30%;
+    top: 50%;
   }
 
   .unit-box {
+    top: 35%;
+  }
+
+  .input {
     top: 35%;
   }
 }
