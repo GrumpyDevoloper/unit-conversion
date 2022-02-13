@@ -56,8 +56,7 @@ button {
   width: 5rem;
   border-radius: 1rem;
   left: 0;
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
+  right: 0;
   top: 30%;
 }
 
@@ -89,10 +88,8 @@ button:hover {
 .unit-box {
   position: relative;
   font-size: 6rem;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
+  top: 35%;
+  left: 0;
 }
 
 .data {
@@ -146,10 +143,10 @@ button:hover {
   }
 
   button {
-    top: 20%;
+    top: 30%;
   }
 
   .unit-box {
-    top: 25%;
+    top: 35%;
   }
 }
