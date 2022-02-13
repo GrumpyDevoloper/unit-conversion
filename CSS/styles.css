@@ -33,15 +33,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1.25rem;
 }
 
 h1 {
   position: relative;
   top: 20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   margin: auto;
   font-size: 1.2rem;
   font-weight: 800;
@@ -57,8 +56,8 @@ button {
   width: 5rem;
   border-radius: 1rem;
   left: 0;
-  -webkit-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transform: translateX(0);
   top: 30%;
 }
 
@@ -92,8 +91,8 @@ button:hover {
   font-size: 6rem;
   top: 30%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 .data {
@@ -136,27 +135,21 @@ button:hover {
   }
 }
 
-@media (max-width: 280px), (max-width: 360px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (max-device-width: 280px) and (-webkit-max-device-pixel-ratio: 4) {
   .data h2 {
     margin: 0.5rem;
   }
 
   button {
-    position: relative;
-    width: 5rem;
-    border-radius: 1rem;
-    left: 0;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
     top: 20%;
   }
 
   .unit-box {
-    position: relative;
-    font-size: 6rem;
     top: 25%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
 }
